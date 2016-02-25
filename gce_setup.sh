@@ -14,5 +14,5 @@ sudo apt-get -y install build-essential
 sudo gem install dashing
 sudo gem install bundler
 bundle install
-sudo apt-get install nodejs
+sudo apt-get -y install nodejs
 sudo dashing start
