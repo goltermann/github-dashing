@@ -35,7 +35,7 @@ class Leaderboard
 	def get(opts={})
 		default_opts = {
 			:days_interval => 30,
-			:limit => 15,
+			:limit => 50,
 			:edits_weighting => {
 				'commits_additions_max'=>100,
 				'commits_additions_loc_threshold'=>1000,
@@ -161,7 +161,7 @@ class Leaderboard
 			.reverse
 
 		# Limit to top list
-		actors_scored[0,opts.limit || 10]
+		actors_scored[0,opts.limit || 50]
 	end
 
 end
