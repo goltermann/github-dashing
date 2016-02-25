@@ -17,4 +17,4 @@ sudo apt-get -y install nodejs
 sudo gem install dashing
 sudo gem install bundler
 bundle install
-sudo dashing start
+dashing start
